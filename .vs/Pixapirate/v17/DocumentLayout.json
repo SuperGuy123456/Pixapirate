@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\C\u002B\u002B\\Pixapirate\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Spritesplitter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\Spritesplitter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\BaseClasses\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\BaseClasses\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Levels\\chunker.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Levels\\chunker.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Pixapirate.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Pixapirate.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Spritesplitter.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Spritesplitter.h",
+              "RelativeDocumentMoniker": "Pixapirate\\Engine\\Spritesplitter.h",
+              "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Spritesplitter.h",
+              "RelativeToolTip": "Pixapirate\\Engine\\Spritesplitter.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-17T16:13:06.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.h",
+              "RelativeDocumentMoniker": "Pixapirate\\Player.h",
+              "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.h",
+              "RelativeToolTip": "Pixapirate\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-17T16:10:13.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Base.h",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\BaseClasses\\Base.h",
+              "RelativeDocumentMoniker": "Pixapirate\\BaseClasses\\Base.h",
+              "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\BaseClasses\\Base.h",
+              "RelativeToolTip": "Pixapirate\\BaseClasses\\Base.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-17T16:04:12.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "chunker.py",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Levels\\chunker.py",
+              "RelativeDocumentMoniker": "Pixapirate\\Levels\\chunker.py",
+              "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Levels\\chunker.py",
+              "RelativeToolTip": "Pixapirate\\Levels\\chunker.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-11-17T16:02:16.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Pixapirate.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Pixapirate.cpp",
               "RelativeDocumentMoniker": "Pixapirate\\Pixapirate.cpp",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Pixapirate.cpp",
               "RelativeToolTip": "Pixapirate\\Pixapirate.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-17T15:41:06.265Z",
               "EditorCaption": ""

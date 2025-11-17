@@ -1,11 +1,26 @@
 // Pixapirate.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include "raylib.h"
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    InitWindow(1920, 1080, "Pixapirate");
+    SetWindowPosition(0, 30); //So the player can see the top bar
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose())
+    {
+        BeginDrawing();
+        ClearBackground(Color{ 0,0,0 });
+
+        
+        DrawFPS(0 ,20);
+        EndDrawing();
+    }
+
+    CloseWindow();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
