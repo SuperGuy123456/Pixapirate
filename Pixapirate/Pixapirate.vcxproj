@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine\Spritesplitter.cpp" />
     <ClCompile Include="Pixapirate.cpp" />
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
