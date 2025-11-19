@@ -1,0 +1,51 @@
+﻿#include "Player.h"
+
+Player::Player()
+{
+	SpriteSplitter::Clothing("Art/Hats/hat_blackcaptain_clean.png",
+		"Art/Head/light/head_light_midbeard_clean.png",
+		"Art/Torso/light/torso_light_redrobes_clean.png",
+		"Art/Arms/light/arms_light_simple_clean.png",
+		"Art/Legs/light/legs_light_tanboots_used.png",
+		hatframes, headframes, torsoframes, armsframes, legsframes); //Automatically sets all frames
+}
+
+Player::~Player()
+{
+	for (AnimationFrames* bodypart : bodyframes)
+	{
+		for (Texture2D runtex : bodypart->run)
+		{
+			UnloadTexture(runtex);
+		}
+
+		for (Texture2D idletex : bodypart->idle)
+		{
+			UnloadTexture(idletex);
+		}
+	}
+}
+
+void Player::Draw()
+{
+	for (AnimationFrames* bodypart : bodyframes)
+	{
+		if (state == AnimationState::IDLE)
+		{
+			if (frame == 3)
+			{
+				frame = 2; //Since run has 4 frames and idle only has 3
+			}
+			DrawTexture(bodypart->idle[frame], x, y, Color{ 255,255,255 });
+		}
+		else
+		{
+			DrawTexture(bodypart->run[frame], x, y, Color{ 255,255,255 });
+		}
+	}
+}
+
+void Player::Update()
+{
+	
+}

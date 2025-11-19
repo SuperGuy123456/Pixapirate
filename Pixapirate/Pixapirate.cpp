@@ -3,6 +3,7 @@
 
 #include "raylib.h"
 #include <iostream>
+#include "Player.h"
 
 int main()
 {
@@ -10,11 +11,19 @@ int main()
     SetWindowPosition(0, 30); //So the player can see the top bar
 
     SetTargetFPS(60);
+
+    Player player;
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
         ClearBackground(Color{ 0,0,0 });
 
+        //----------------------------------UPDATES--------------------
+        player.Update();
+
+        //-------------------------------DRAWCALLS---------------------
+        player.Draw();
         
         DrawFPS(0 ,20);
         EndDrawing();

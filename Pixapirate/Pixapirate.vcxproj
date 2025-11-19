@@ -124,12 +124,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Engine\Spritesplitter.cpp" />
+    <ClCompile Include="Engine\InputManager.cpp" />
+    <ClCompile Include="Engine\EventManager.cpp" />
     <ClCompile Include="Pixapirate.cpp" />
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseClasses\Base.h" />
+    <ClInclude Include="Engine\Allstructs.h" />
     <ClInclude Include="Engine\Spritesplitter.h" />
+    <ClInclude Include="Engine\InputManager.h" />
+    <ClInclude Include="Engine\EventManager.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
