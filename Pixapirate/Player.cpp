@@ -28,7 +28,7 @@ Player::~Player()
 
 void Player::Draw()
 {
-	for (AnimationFrames* bodypart : bodyframes)
+	for (AnimationFrames* bodypart : draworder)
 	{
 		if (state == AnimationState::IDLE)
 		{
@@ -47,5 +47,35 @@ void Player::Draw()
 
 void Player::Update()
 {
-	
+	Animate();
+}
+
+void Player::Animate()
+{
+	if (GetTime() - lasttime >= 0.2)
+	{
+		lasttime = GetTime();
+		if (state == AnimationState::IDLE)
+		{
+			if (frame == 2) //only has 3 frames
+			{
+				frame = 0;
+			}
+			else
+			{
+				frame++;
+			}
+		}
+		else
+		{
+			if (frame == 3) //has 4 frames
+			{
+				frame = 0;
+			}
+			else
+			{
+				frame++;
+			}
+		}
+	}
 }

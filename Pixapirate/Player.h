@@ -3,6 +3,7 @@
 #include "Engine/Spritesplitter.h"
 #include "Engine/Allstructs.h"
 #include <vector>
+#include <iostream>
 
 enum AnimationState
 {
@@ -27,6 +28,7 @@ private:
 
 	AnimationState state = AnimationState::IDLE;
 	int frame = 0;
+	double lasttime = GetTime();
 
 	AnimationFrames hatframes;
 	AnimationFrames headframes;
@@ -35,4 +37,7 @@ private:
 	AnimationFrames legsframes;
 
 	vector<AnimationFrames*> bodyframes = { &hatframes, &headframes, &torsoframes, &armsframes, &legsframes };
+	vector<AnimationFrames*> draworder = { &torsoframes, &legsframes, &headframes, &armsframes, &hatframes };
+
+	void Animate();
 };
