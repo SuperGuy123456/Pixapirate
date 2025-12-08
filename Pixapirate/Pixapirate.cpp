@@ -17,6 +17,7 @@ int main()
     EventManager playerposmanager;
     EventManager keyboardmanager;
 
+	InputManager inputmanager(keyboardmanager);
 
     Player player(playerposmanager, keyboardmanager);
 
