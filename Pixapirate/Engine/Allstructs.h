@@ -15,6 +15,6 @@ struct AnimationFrames
 
 struct listenerload
 {
-	Listener listener;
+	Listener* listener;
 	string command;
 };

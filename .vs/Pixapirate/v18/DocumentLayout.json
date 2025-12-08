@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\C\u002B\u002B\\Pixapirate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\EventManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\EventManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Allstructs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\Allstructs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\InputManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\EventManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Pixapirate.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Pixapirate.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\EventManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\BaseClasses\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\BaseClasses\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Spritesplitter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Spritesplitter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\Spritesplitter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\Engine\\InputManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\BaseClasses\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{461214CD-55FF-46E0-9656-5512C462B268}|Pixapirate\\Pixapirate.vcxproj|solutionrelative:Pixapirate\\BaseClasses\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,102 +50,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "InputManager.cpp",
+              "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\InputManager.cpp",
+              "RelativeDocumentMoniker": "Pixapirate\\Engine\\InputManager.cpp",
+              "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\InputManager.cpp",
+              "RelativeToolTip": "Pixapirate\\Engine\\InputManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-08T16:20:37.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Pixapirate.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Pixapirate.cpp",
               "RelativeDocumentMoniker": "Pixapirate\\Pixapirate.cpp",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Pixapirate.cpp",
               "RelativeToolTip": "Pixapirate\\Pixapirate.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAANDMzMzPrvxwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-19T23:19:47.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Allstructs.h",
-              "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Allstructs.h",
-              "RelativeDocumentMoniker": "Pixapirate\\Engine\\Allstructs.h",
-              "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Allstructs.h",
-              "RelativeToolTip": "Pixapirate\\Engine\\Allstructs.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-19T23:19:47.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EventManager.h",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.h",
               "RelativeDocumentMoniker": "Pixapirate\\Engine\\EventManager.h",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.h",
               "RelativeToolTip": "Pixapirate\\Engine\\EventManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAANDMzMzPrvxgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-19T23:19:47.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "EventManager.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.cpp",
               "RelativeDocumentMoniker": "Pixapirate\\Engine\\EventManager.cpp",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\EventManager.cpp",
               "RelativeToolTip": "Pixapirate\\Engine\\EventManager.cpp",
-              "ViewState": "AgIAAAAAAAAANDMzMzPbvwcAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAy8zMzMwGwDwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-19T23:52:48.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "InputManager.h",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\InputManager.h",
               "RelativeDocumentMoniker": "Pixapirate\\Engine\\InputManager.h",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\InputManager.h",
               "RelativeToolTip": "Pixapirate\\Engine\\InputManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-19T23:19:47.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Player.h",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.h",
               "RelativeDocumentMoniker": "Pixapirate\\Player.h",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.h",
               "RelativeToolTip": "Pixapirate\\Player.h",
-              "ViewState": "AgIAAAMAAAAAMzMzM7MiwBwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAACg/v///38ZwDAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-19T23:19:47.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Player.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.cpp",
               "RelativeDocumentMoniker": "Pixapirate\\Player.cpp",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Player.cpp",
               "RelativeToolTip": "Pixapirate\\Player.cpp",
-              "ViewState": "AgIAACUAAACAk5mZmRkVwD0AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAADA//////8owDoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-19T23:19:47.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Spritesplitter.h",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Spritesplitter.h",
               "RelativeDocumentMoniker": "Pixapirate\\Engine\\Spritesplitter.h",
@@ -153,12 +153,11 @@
               "RelativeToolTip": "Pixapirate\\Engine\\Spritesplitter.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-19T23:19:47.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T23:19:47.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Spritesplitter.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\Engine\\Spritesplitter.cpp",
               "RelativeDocumentMoniker": "Pixapirate\\Engine\\Spritesplitter.cpp",
@@ -171,15 +170,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Base.h",
               "DocumentMoniker": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\BaseClasses\\Base.h",
               "RelativeDocumentMoniker": "Pixapirate\\BaseClasses\\Base.h",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\BaseClasses\\Base.h",
               "RelativeToolTip": "Pixapirate\\BaseClasses\\Base.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-19T23:19:47.203Z"
+              "WhenOpened": "2025-11-19T23:19:47.203Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -4,6 +4,8 @@
 #include "raylib.h"
 #include <iostream>
 #include "Player.h"
+#include "Engine/EventManager.h"
+#include "Engine/InputMAnager.h"
 
 int main()
 {
@@ -12,12 +14,18 @@ int main()
 
     SetTargetFPS(60);
 
-    Player player;
+    EventManager playerposmanager;
+    EventManager keyboardmanager;
+
+
+    Player player(playerposmanager, keyboardmanager);
 
     while (!WindowShouldClose())
     {
         BeginDrawing();
         ClearBackground(Color{ 0,0,0 });
+
+		inputmanager.GetInput();
 
         //----------------------------------UPDATES--------------------
         player.Update();

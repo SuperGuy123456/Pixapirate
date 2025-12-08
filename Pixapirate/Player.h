@@ -1,6 +1,7 @@
 #pragma once
 #include "BaseClasses/Base.h"
 #include "Engine/Spritesplitter.h"
+#include "Engine/EventManager.h"
 #include "Engine/Allstructs.h"
 #include <vector>
 #include <iostream>
@@ -16,14 +17,19 @@ using namespace std;
 class Player : public HasCollider, public Load, public Listener
 {
 public:
-	Player(); //Load ALL player texures
+	Player(EventManager& _playerposmanager, EventManager& _keyboardmanager); //Load ALL player texures
 	~Player(); //Unload ALL player textures
 
 	void Update(); // Ran before draw in mainloop
 	void Draw(); //Run by the DrawingPipline
+
+	void OnEvent(string& command) override;
 private:
-	int x = 100;
-	int y = 100;
+	float x = 100;
+	float y = 100;
+
+	float xvel = 0;
+	float yvel = 0;
 
 
 	AnimationState state = AnimationState::IDLE;
@@ -40,4 +46,8 @@ private:
 	vector<AnimationFrames*> draworder = { &torsoframes, &legsframes, &headframes, &armsframes, &hatframes };
 
 	void Animate();
+	void ApplyMovement();
+
+	EventManager& playerposmanager;
+	EventManager& keyboardmanager;
 };
