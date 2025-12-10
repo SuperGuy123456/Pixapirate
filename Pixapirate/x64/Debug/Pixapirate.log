@@ -1,11 +1,6 @@
-﻿  InputManager.cpp
-  Pixapirate.cpp
-  Player.cpp
-D:\C++\Pixapirate\Pixapirate\Player.cpp(47,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\C++\Pixapirate\Pixapirate\Player.cpp(47,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\C++\Pixapirate\Pixapirate\Player.cpp(51,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\C++\Pixapirate\Pixapirate\Player.cpp(51,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
+﻿  Player.cpp
+D:\C++\Pixapirate\Pixapirate\Player.cpp(17,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+D:\C++\Pixapirate\Pixapirate\Player.cpp(188,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   Pixapirate.vcxproj -> D:\C++\Pixapirate\x64\Debug\Pixapirate.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

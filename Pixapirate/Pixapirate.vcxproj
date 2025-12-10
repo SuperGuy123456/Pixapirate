@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -102,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,6 +124,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine\Chunks.cpp" />
+    <ClCompile Include="Engine\DrawingPipeline.cpp" />
     <ClCompile Include="Engine\Spritesplitter.cpp" />
     <ClCompile Include="Engine\InputManager.cpp" />
     <ClCompile Include="Engine\EventManager.cpp" />
@@ -131,6 +134,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseClasses\Base.h" />
+    <ClInclude Include="Engine\Chunks.h" />
+    <ClInclude Include="Engine\DrawingPipeline.h" />
     <ClInclude Include="Engine\Allstructs.h" />
     <ClInclude Include="Engine\Spritesplitter.h" />
     <ClInclude Include="Engine\InputManager.h" />

@@ -3,7 +3,6 @@ import SpriteSplitter as SpriteSplitter
 import csv
 import os
 import pygame
-
 pygame.init()
 pygame.display.set_mode((1, 1))  # Required for image conversion if needed
 
@@ -67,7 +66,11 @@ def Create_Chunk_Surface(path_to_csv, tiles):
     chunk_height = 16
     chunkobjects = []
 
-    WATER_TILE_INDEX = 7  # Define water tile index
+    WATER_TILE_INDEXES = [
+        86, 4, 5, 6, 7, 8, 9,
+        20, 21, 22, 23, 24, 25,
+        36, 37, 38, 39, 40, 41
+    ]
 
     with open(path_to_csv, 'r') as csvfile:
         chunkdata = []
@@ -101,7 +104,7 @@ def Create_Chunk_Surface(path_to_csv, tiles):
                                 pos_x = x * tile_size
                                 pos_y = y * tile_size
                                 chunk_surface.blit(tile_image, (pos_x, pos_y))
-                            if tile_index == WATER_TILE_INDEX:
+                            if tile_index in WATER_TILE_INDEXES:   # <-- changed here
                                 pygame.draw.rect(
                                     collider_surface,
                                     (255, 255, 255, 255),  # Solid white
@@ -131,7 +134,7 @@ def Create_Chunk_Surface(path_to_csv, tiles):
                         pos_x = x * tile_size
                         pos_y = y * tile_size
                         chunk_surface.blit(tile_image, (pos_x, pos_y))
-                    if tile_index == WATER_TILE_INDEX:
+                    if tile_index in WATER_TILE_INDEXES:   # <-- changed here
                         pygame.draw.rect(
                             collider_surface,
                             (255, 255, 255, 255),

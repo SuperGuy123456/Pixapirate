@@ -1,0 +1,6 @@
+# Ignore Visual Studio IntelliSense cache
+*.ipch
+ipch/
+.vs/
+/.vs/Pixapirate/v18/Insiders/ipch/AutoPCH/5e6282daa9243674
+*.ipch

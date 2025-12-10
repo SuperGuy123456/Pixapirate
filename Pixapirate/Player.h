@@ -5,6 +5,7 @@
 #include "Engine/Allstructs.h"
 #include <vector>
 #include <iostream>
+#include "Engine/DrawingPipeline.h"
 
 enum AnimationState
 {
@@ -17,11 +18,11 @@ using namespace std;
 class Player : public HasCollider, public Load, public Listener
 {
 public:
-	Player(EventManager& _playerposmanager, EventManager& _keyboardmanager); //Load ALL player texures
+	Player(EventManager& _playerposmanager, EventManager& _keyboardmanager, DrawLayer& _entitylayer, DrawLayer& _effectslayer, Camera2D& _camera); //Load ALL player texures
 	~Player(); //Unload ALL player textures
 
 	void Update(); // Ran before draw in mainloop
-	void Draw(); //Run by the DrawingPipline
+	void Draw() override; //Run by the DrawingPipline
 
 	void OnEvent(string& command) override;
 private:
@@ -35,6 +36,7 @@ private:
 	AnimationState state = AnimationState::IDLE;
 	int frame = 0;
 	double lasttime = GetTime();
+	int facingright = 1;
 
 	AnimationFrames hatframes;
 	AnimationFrames headframes;
@@ -47,7 +49,13 @@ private:
 
 	void Animate();
 	void ApplyMovement();
+	void UpdateCamPos();
 
 	EventManager& playerposmanager;
 	EventManager& keyboardmanager;
+
+	DrawLayer& entitylayer;
+	DrawLayer& effectslayer;
+
+	Camera2D& cam;
 };

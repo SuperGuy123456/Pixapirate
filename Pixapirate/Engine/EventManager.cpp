@@ -43,29 +43,29 @@ void EventManager::BroadcastMessage(string message)
 }
 void EventManager::BroadcastSpecialMessage(string message)
 {
-	//the boradcast is basically the keyword and a bunch of params separated by spaces
-	//eg: command could be damage so a special broadcast would be damage 20 or something like that
+    // Split the message into words
+    istringstream iss(message);
+    vector<string> words;
+    string word;
 
-	//first split string by space and discard first part
-	istringstream iss(message);
+    while (iss >> word) {
+        words.push_back(word);
+    }
 
-	vector<std::string> words;
-	string word;
+    if (words.empty()) return; // nothing to broadcast
 
-	while (iss >> word) {
-		words.push_back(word);
-	}
+    // First word is the command
+    string command = words[0];
 
-	string command = words[0]; //first word is the command
+    // Remove the command from the vector so only params remain
+    words.erase(words.begin());
 
-	words.erase(words.begin()); //remove first word so only params remain
-
-	for (auto const& x : speciallisteners)
-	{
-		if (x.second.command == command)
-		{
-			x.second.listener->OnSpecialEvent(message, words);
-		}
-	}
-
+    // Notify listeners
+    for (auto const& x : speciallisteners)
+    {
+        if (x.second.command == command)
+        {
+            x.second.listener->OnSpecialEvent(command, words);
+        }
+    }
 }

@@ -5,7 +5,12 @@
 using namespace std;
 // To store diff classes in same array
 class HasCollider{};
-class Load{};
+class Load
+{
+public:
+	virtual void Draw() = 0;
+};
+
 class Listener
 {
 public:

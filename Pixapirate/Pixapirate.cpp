@@ -5,7 +5,9 @@
 #include <iostream>
 #include "Player.h"
 #include "Engine/EventManager.h"
-#include "Engine/InputMAnager.h"
+#include "Engine/InputManager.h"
+#include "Engine/DrawingPipeline.h"
+#include "Engine/Chunks.h"
 
 int main()
 {
@@ -14,25 +16,55 @@ int main()
 
     SetTargetFPS(60);
 
+	Camera2D camera = { 0 };
+    camera.target = Vector2{ 100, 100 };   // follow player
+    camera.offset = Vector2{ 1920 / 2.0f, 1080 / 2.0f }; // keep player centered
+    camera.rotation = 0.0f;
+    camera.zoom = 2.0f;
+
+
+	DrawingPipeline drawingpipeline;
+
+    DrawLayer uilayer;
+    DrawLayer effectslayer;
+    DrawLayer entitylayer;
+    DrawLayer bglayer;
+
+	drawingpipeline.AddLayer(&uilayer, "UI");
+	drawingpipeline.AddLayer(&effectslayer, "Effects");
+	drawingpipeline.AddLayer(&entitylayer, "Entities");
+	drawingpipeline.AddLayer(&bglayer, "Background");
+
     EventManager playerposmanager;
     EventManager keyboardmanager;
 
 	InputManager inputmanager(keyboardmanager);
 
-    Player player(playerposmanager, keyboardmanager);
+    Player player(playerposmanager, keyboardmanager, entitylayer, effectslayer, camera);
+
+	ChunkManager chunkmanager(playerposmanager, bglayer);
 
     while (!WindowShouldClose())
     {
         BeginDrawing();
-        ClearBackground(Color{ 0,0,0 });
+        ClearBackground(Color{ 0, 79,130 });
 
 		inputmanager.GetInput();
+        if (IsKeyPressed(KEY_F1)) camera.zoom = 2.0f;   // normal play view
+        if (IsKeyPressed(KEY_F2)) camera.zoom = 1.0f;   // slight zoom out
+        if (IsKeyPressed(KEY_F3)) camera.zoom = 0.5f;   // debug overview
+        if (IsKeyPressed(KEY_F4)) camera.zoom = 0.25f;  // extreme zoom-out
 
         //----------------------------------UPDATES--------------------
         player.Update();
+        chunkmanager.Update();
+
+        BeginMode2D(camera);
 
         //-------------------------------DRAWCALLS---------------------
-        player.Draw();
+        drawingpipeline.DrawAll();
+
+		EndMode2D();
         
         DrawFPS(0 ,20);
         EndDrawing();
@@ -40,14 +72,3 @@ int main()
 
     CloseWindow();
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
