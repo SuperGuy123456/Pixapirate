@@ -124,6 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AI.cpp" />
     <ClCompile Include="Engine\Chunks.cpp" />
     <ClCompile Include="Engine\DrawingPipeline.cpp" />
     <ClCompile Include="Engine\Spritesplitter.cpp" />
@@ -133,6 +134,7 @@
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI.h" />
     <ClInclude Include="BaseClasses\Base.h" />
     <ClInclude Include="Engine\Chunks.h" />
     <ClInclude Include="Engine\DrawingPipeline.h" />

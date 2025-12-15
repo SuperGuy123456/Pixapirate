@@ -1,6 +1,6 @@
 #pragma once
 #include "raylib.h"
-#include "../Engine/Allstructs.h"
+#include "../BaseClasses/Base.h"
 #include <vector>
 #include <string>
 

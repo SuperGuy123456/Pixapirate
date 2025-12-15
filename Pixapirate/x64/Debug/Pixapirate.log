@@ -1,6 +1,11 @@
-﻿  Player.cpp
-D:\C++\Pixapirate\Pixapirate\Player.cpp(17,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-D:\C++\Pixapirate\Pixapirate\Player.cpp(188,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+﻿  AI.cpp
+D:\C++\Pixapirate\Pixapirate\AI.cpp(36,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\C++\Pixapirate\Pixapirate\AI.cpp(37,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\C++\Pixapirate\Pixapirate\AI.cpp(38,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\C++\Pixapirate\Pixapirate\AI.cpp(39,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\C++\Pixapirate\Pixapirate\AI.cpp(74,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\C++\Pixapirate\Pixapirate\AI.cpp(127,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\C++\Pixapirate\Pixapirate\AI.cpp(219,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   Pixapirate.vcxproj -> D:\C++\Pixapirate\x64\Debug\Pixapirate.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
