@@ -17,11 +17,11 @@ WATER_TILE_INDEXES = [
 ]
 
 DANGER_TILE_INDEXES = [
-    100, 101, 102, 103  # example
+    #100, 101, 102, 103  # example
 ]
 
 BLOCK_TILE_INDEXES = [
-    200, 201, 202, 203  # example
+    #200, 201, 202, 203  # example
 ]
 
 # Collision keys

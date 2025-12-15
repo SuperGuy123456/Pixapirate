@@ -71,8 +71,7 @@
               "ViewState": "AgIAABkAAAAAAAAAAAAswDEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-19T23:19:47.144Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "Pixapirate\\Player.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-15T00:17:27.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T00:17:27.162Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "Pixapirate\\Engine\\Spritesplitter.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-14T23:48:07.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T23:48:07.015Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "Pixapirate\\Engine\\Spritesplitter.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-14T23:48:06.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T23:48:06.14Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "Pixapirate\\Engine\\Chunks.h",
               "ViewState": "AgIAAA0AAAAAmZmZmZkWwBsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-13T22:19:16.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T22:19:16.741Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "Pixapirate\\Engine\\Chunks.cpp",
               "ViewState": "AgIAAIMAAAAAmJmZmZkWwBIBAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-13T22:19:29.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T22:19:29.627Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "Pixapirate\\AI.cpp",
               "ViewState": "AgIAAHQAAAAAAAAAAAAswIEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-10T22:39:12.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T22:39:12.261Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "Pixapirate\\Engine\\DrawingPipeline.cpp",
               "ViewState": "AgIAAAcAAAAAAAAAAAAuwBEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-15T02:08:44.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T02:08:44.607Z"
             },
             {
               "$type": "Document",
@@ -173,7 +165,7 @@
               "RelativeDocumentMoniker": "Pixapirate\\AI.h",
               "ToolTip": "D:\\C\u002B\u002B\\Pixapirate\\Pixapirate\\AI.h",
               "RelativeToolTip": "Pixapirate\\AI.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-15T00:28:40.322Z",
               "EditorCaption": ""
@@ -188,8 +180,7 @@
               "RelativeToolTip": "Pixapirate\\Engine\\DrawingPipeline.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-15T02:08:37.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T02:08:37.411Z"
             },
             {
               "$type": "Document",
@@ -201,8 +192,7 @@
               "RelativeToolTip": "Pixapirate\\Engine\\Allstructs.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-10T22:44:08.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T22:44:08.321Z"
             },
             {
               "$type": "Document",
@@ -214,8 +204,7 @@
               "RelativeToolTip": "Pixapirate\\BaseClasses\\Base.h",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-19T23:19:47.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T23:19:47.203Z"
             }
           ]
         }
