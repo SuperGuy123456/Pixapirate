@@ -45,7 +45,7 @@ int main()
 
 	ChunkManager chunkmanager(playerposmanager, bglayer, entitylayer);
 
-    SimpleNPC testNPC(
+    SimpleNPC* testNPC = new SimpleNPC(
         "test_npc",
         Vector2{ 367, 246 },
         100,
@@ -58,6 +58,15 @@ int main()
             Vector2{ 181.0f, 722.0f }
     },
         false
+    );
+
+    LandPatrolHivemind* testhivemind = new LandPatrolHivemind(
+        1,
+        5,
+        false,
+        entitylayer,
+        playerposmanager,
+        chunkmanager
     );
 
     while (!WindowShouldClose())

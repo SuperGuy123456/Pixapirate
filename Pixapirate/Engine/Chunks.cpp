@@ -4,6 +4,7 @@
 #include <fstream>
 #include <sstream>
 
+#pragma region ChunkSTUFF
 // ---------------- Chunk ----------------
 
 Chunk::Chunk(std::string _path, int gx, int gy, DrawLayer& _entitylayer) : entitylayer(_entitylayer)
@@ -94,7 +95,9 @@ void Chunk::RemoveNPC(BaseNPC* npcpointer)
 		entitylayer.RemoveDrawCall(npcpointer);
     }
 }
+#pragma endregion
 
+#pragma region ChunkManagerSTUFF
 // ---------------- Chunk Manager ----------------
 
 ChunkManager::ChunkManager(EventManager& _eventmanager, DrawLayer& _bglayer, DrawLayer& _entitylayer)
@@ -263,6 +266,11 @@ void ChunkManager::Update()
     for (Chunk* c : activeChunks)
         c->Update();
 
+    for (BaseNPC* npcpointer : Persistantnpcs)
+    {
+        npcpointer->Update();
+    }
+
     // -----------------------------------------
     // ✅ DEBUG: Click to test collision
     // -----------------------------------------
@@ -320,10 +328,17 @@ void ChunkManager::MarkPersistant(BaseNPC* npcpointer, Vector2 chunk)
 	Chunk* oldchunk = &chunkGrid[(int)chunk.x][(int)chunk.y];
 	oldchunk->RemoveNPC(npcpointer);
 	Persistantnpcs.push_back(npcpointer);
+	entitylayer.AddDrawCall(npcpointer, npcpointer->position.y); // NPCs drawn above chunk
+}
+void ChunkManager::MarkPersistantWithoutRemove(BaseNPC* npcpointer)
+{
+    Persistantnpcs.push_back(npcpointer);
+	entitylayer.AddDrawCall(npcpointer, npcpointer->position.y); // NPCs drawn above chunk
 }
 
 void ChunkManager::RemovePersistant(BaseNPC* npcpointer, Vector2 chunk)
 {
+	entitylayer.RemoveDrawCall(npcpointer);
     auto it = std::find(Persistantnpcs.begin(), Persistantnpcs.end(), npcpointer);
     if (it != Persistantnpcs.end())
     {
@@ -346,3 +361,5 @@ void ChunkManager::AddNPCToChunk(BaseNPC* npcpointer, Vector2 chunk)
     Chunk* targetchunk = &chunkGrid[(int)chunk.x][(int)chunk.y];
     targetchunk->AddNPC(npcpointer);
 }
+
+#pragma endregion

@@ -6,6 +6,7 @@
 #include <vector>
 #include <iostream>
 #include "Engine/DrawingPipeline.h"
+#include "raymath.h"
 
 enum AnimationState
 {

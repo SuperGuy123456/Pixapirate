@@ -1,4 +1,4 @@
-#include "Player.h"
+﻿#include "Player.h"
 
 Player::Player(EventManager& _playerposmanager, EventManager& _keyboardmanager, DrawLayer& _entitylayer, DrawLayer& _effectslayer, Camera2D& _camera) : playerposmanager(_playerposmanager), keyboardmanager(_keyboardmanager), entitylayer(_entitylayer), effectslayer(_effectslayer), cam(_camera)
 {
@@ -123,37 +123,57 @@ void Player::Animate()
 
 void Player::OnEvent(string& command)
 {
-	//cout << "Player received command: " << command << endl;
+	// Update velocity FIRST
 	if (command == "HOLD_W")
 	{
 		yvel -= 1;
 		state = AnimationState::RUN;
-		playerposmanager.BroadcastSpecialMessage("PLAYER_POS_UPDATE " + to_string(x) + " " + to_string(y));
 	}
 	else if (command == "HOLD_S")
 	{
 		yvel += 1;
 		state = AnimationState::RUN;
-		playerposmanager.BroadcastSpecialMessage("PLAYER_POS_UPDATE " + to_string(x) + " " + to_string(y));
 	}
 	else if (command == "HOLD_A")
 	{
 		xvel -= 1;
 		state = AnimationState::RUN;
-		playerposmanager.BroadcastSpecialMessage("PLAYER_POS_UPDATE " + to_string(x) + " " + to_string(y));
 		facingright = -1;
 	}
 	else if (command == "HOLD_D")
 	{
 		xvel += 1;
 		state = AnimationState::RUN;
-		playerposmanager.BroadcastSpecialMessage("PLAYER_POS_UPDATE " + to_string(x) + " " + to_string(y));
 		facingright = 1;
 	}
 	else
 	{
 		state = AnimationState::IDLE;
 	}
+
+	Vector2 forwardvector = { 0, 0 };
+
+	if (xvel < 0) forwardvector.x = -1;
+	else if (xvel > 0) forwardvector.x = 1;
+
+	if (yvel < 0) forwardvector.y = -1;
+	else if (yvel > 0) forwardvector.y = 1;
+
+	// If idle, use facing direction
+	if (forwardvector.x == 0 && forwardvector.y == 0)
+	{
+		forwardvector.x = (float)facingright;
+		forwardvector.y = 0;
+	}
+
+	// Broadcast AFTER computing correct forward vector
+	playerposmanager.BroadcastSpecialMessage(
+		"PLAYER_POS_UPDATE " +
+		to_string(x) + " " +
+		to_string(y) + " " +
+		to_string(forwardvector.x) + " " +
+		to_string(forwardvector.y)
+	);
 }
 
 void Player::ApplyMovement()
@@ -206,3 +226,4 @@ void Player::ApplyMovement()
 		yvel += 0.5f;
 	}
 }
+

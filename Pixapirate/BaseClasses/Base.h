@@ -7,6 +7,13 @@
 using namespace std;
 // To store diff classes in same array
 
+struct Node {
+	int x, y;
+	float gCost, hCost;
+	Node* parent;
+	float fCost() const { return gCost + hCost; }
+};
+
 class HasCollider {};
 class Load
 {

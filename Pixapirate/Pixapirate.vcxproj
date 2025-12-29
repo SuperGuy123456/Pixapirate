@@ -127,6 +127,7 @@
     <ClCompile Include="AI.cpp" />
     <ClCompile Include="Engine\Chunks.cpp" />
     <ClCompile Include="Engine\DrawingPipeline.cpp" />
+    <ClCompile Include="Engine\Pathfinding.cpp" />
     <ClCompile Include="Engine\Spritesplitter.cpp" />
     <ClCompile Include="Engine\InputManager.cpp" />
     <ClCompile Include="Engine\EventManager.cpp" />
@@ -139,6 +140,7 @@
     <ClInclude Include="Engine\Chunks.h" />
     <ClInclude Include="Engine\DrawingPipeline.h" />
     <ClInclude Include="Engine\Allstructs.h" />
+    <ClInclude Include="Engine\Pathfinding.h" />
     <ClInclude Include="Engine\Spritesplitter.h" />
     <ClInclude Include="Engine\InputManager.h" />
     <ClInclude Include="Engine\EventManager.h" />

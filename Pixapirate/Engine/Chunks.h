@@ -70,6 +70,7 @@ public:
 
 	//Be careful when using as it can cause duplicates if not removed from previous chunk
 	void AddNPCToChunk(BaseNPC* npcpointer, Vector2 chunk); //Uses add function from Chunk by looking up chunk using coords (DOES NOT REMOVE FROM ANYWHERE)
+    void MarkPersistantWithoutRemove(BaseNPC* npcpointer); //simple adds to persistant list (DOES NOT REMOVE FROM ANYWHERE)
 
     void MarkPersistant(BaseNPC* npcpointer, Vector2 chunk); //Uses remove function from Chunk by looking up chunk using coords and adds to its persistant list
     void RemovePersistant(BaseNPC* npcpointer, Vector2 chunk); //removes from persistant and adds to chunk using Add method
