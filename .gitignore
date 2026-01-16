@@ -16,6 +16,9 @@ Debug/
 .idea/
 cmake-build-*/
 CMakeLists.txt
+Pixapirate.app/
+build/
+run.sh
 
 # macOS
 .DS_Store
