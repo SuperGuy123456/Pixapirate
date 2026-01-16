@@ -12,14 +12,27 @@
 
 int main()
 {
-    InitWindow(1920, 1080, "Pixapirate");
-    SetWindowPosition(0, 30); //So the player can see the top bar
+    // Initialize with a small window first to query monitor size
+    InitWindow(800, 600, "Pixapirate");
+    
+    // Get the current monitor's dimensions
+    int monitor = GetCurrentMonitor();
+    int screenWidth = GetMonitorWidth(monitor);
+    int screenHeight = GetMonitorHeight(monitor);
+    
+    // Use 95% of screen size to avoid fullscreen but fill most of the display
+    int windowWidth = (int)(screenWidth);
+    int windowHeight = (int)(screenHeight);
+    
+    // Resize to proper dimensions
+    SetWindowSize(windowWidth, windowHeight);
+    SetWindowPosition((screenWidth - windowWidth) / 2, (screenHeight - windowHeight) / 2); // Center the window
 
     SetTargetFPS(300);
 
 	Camera2D camera = { 0 };
     camera.target = Vector2{ 100, 100 };   // follow player
-    camera.offset = Vector2{ 1920 / 2.0f, 1080 / 2.0f }; // keep player centered
+    camera.offset = Vector2{ windowWidth / 2.0f, windowHeight / 2.0f }; // keep player centered
     camera.rotation = 0.0f;
     camera.zoom = 2.0f;
 
