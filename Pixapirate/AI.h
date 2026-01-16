@@ -11,6 +11,30 @@
 #include "raymath.h"
 #include "Engine/Pathfinding.h"
 
+enum ChaseStage
+{
+	APPROACH, //When going to player position
+	BEGINFLANK, //When going to a position in front of player to initiate flank
+	FLANKING //When going to a designated flank position
+};
+
+enum FlankRole
+{
+	ROLE_REAR,
+	ROLE_SIDE_LEFT,
+	ROLE_SIDE_RIGHT,
+	ROLE_SUPPORT_TOP_LEFT,
+	ROLE_SUPPORT_TOP_RIGHT,
+	ROLE_SUPPORT_BOTTOM_LEFT,
+	ROLE_SUPPORT_BOTTOM_RIGHT,
+	ROLE_CUTOFF
+};
+class LandPatroler; //Forward declaration
+struct TaskSlot
+{
+	FlankRole role;
+	LandPatroler* assigned = nullptr;
+};
 
 class SimpleNPC : public BaseNPC
 {
@@ -76,9 +100,17 @@ public:
 	void Shutdown() override; //If chunk is about to be unloaded
 	void Startup() override; //If chunk is loaded
 
+	void HIVEMIND_StartShooting();
+	void HIVEMIND_ChangeState(ChaseStage newstage);
+
 	int point = 0;
 	vector<Vector2> path; //set by hive mind (this npc just blindly follows whatever path it is given)
 	LandPatrolHivemind* hivemindpointer; // if it reaches target and needs new directions
+
+	ChaseStage task = ChaseStage::APPROACH;
+	bool shoot = false;
+
+	int id;
 };
 
 class LandPatrolHivemind : public BaseNPC//Controls a group of LandPatroler npcs to move together toward a target (The brains) also controls the draws, updates etc of its minions (only BaseNPC for chunks)
@@ -102,15 +134,23 @@ public:
 	//Unused. If they are too far, simple destroy
 	void Shutdown() override; //If chunk is about to be unloaded (unused since it is persistant)
 	void Startup() override; //If chunk is loaded (unused since it is persistant)
+
+	void LANDPATROL_ReachedTarget(LandPatroler* minion); //Called by minions when they reach their target to get new orders
+
+	vector<LandPatroler*> minions;
 private:
 	Color debugcolors[6] = {RED,ORANGE, YELLOW, GREEN, BLUE, PURPLE};
 	void DebugSpawnHitPatrols();
 	void AssignPatrolers();
+	Vector2 ComputeStartFlankPoint(float playerSpeed,Vector2 enemyPos,float enemySpeed);
+	float RandomFloat(float min, float max);
+	void AssignFlankRoles(LandPatroler* minion);
+	void CalculateFlankPoint(LandPatroler* minion, TaskSlot* slotgiven);
+
 	DrawLayer& entitylayer;
 	EventManager& playerposmanager;
 	ChunkManager& chunkmanager;
 
-	vector<LandPatroler*> minions;
 	vector<Vector2> spawnpoints;
 	vector<std::vector<Vector2>> paths;
 	int difficulty;
@@ -118,5 +158,10 @@ private:
 	bool isambush;
 
 	Vector2 playerforwardvector;
+	Vector2 lastforward = { 0 , 0 }; //in order to detect change and recaluculate
+	Vector2 playerpossincelastforward = { 0 , 0 }; //set when forward changes
 	Vector2 playerpos;
+
+	vector<TaskSlot> taskboard;
+	vector<Vector2> flankstarts;
 };

@@ -15,7 +15,7 @@ int main()
     InitWindow(1920, 1080, "Pixapirate");
     SetWindowPosition(0, 30); //So the player can see the top bar
 
-    SetTargetFPS(60);
+    SetTargetFPS(300);
 
 	Camera2D camera = { 0 };
     camera.target = Vector2{ 100, 100 };   // follow player
@@ -45,7 +45,7 @@ int main()
 
 	ChunkManager chunkmanager(playerposmanager, bglayer, entitylayer);
 
-    SimpleNPC* testNPC = new SimpleNPC(
+    /*SimpleNPC* testNPC = new SimpleNPC(
         "test_npc",
         Vector2{ 367, 246 },
         100,
@@ -58,11 +58,11 @@ int main()
             Vector2{ 181.0f, 722.0f }
     },
         false
-    );
+    );*/
 
     LandPatrolHivemind* testhivemind = new LandPatrolHivemind(
         1,
-        5,
+        8,
         false,
         entitylayer,
         playerposmanager,

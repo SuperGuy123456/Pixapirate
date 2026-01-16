@@ -196,8 +196,10 @@ void Player::ApplyMovement()
 		yvel = -2;
 	}
 
-	x += xvel;
-	y += yvel;
+	Vector2 velocitynormal = Vector2Normalize(Vector2{ xvel, yvel });
+
+	x += velocitynormal.x * 2;
+	y += velocitynormal.y * 2;
 
 	if (xvel == 0 and yvel == 0)
 	{
