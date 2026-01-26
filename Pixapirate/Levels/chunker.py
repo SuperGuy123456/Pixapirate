@@ -189,8 +189,8 @@ def Create_Chunk_Surface(path_to_csv, tiles):
 # ---------------------------------------------------------
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_file = os.path.join(script_dir, 'start.tmx')
-    output_file = os.path.join(script_dir, 'start.csv')
+    input_file = os.path.join(script_dir, 'start copy.tmx')
+    output_file = os.path.join(script_dir, 'start copy.csv')
 
     chunks_data = parse_tmx_chunks(input_file)
     write_chunks_to_csv(chunks_data, output_file)

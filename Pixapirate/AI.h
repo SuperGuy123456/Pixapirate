@@ -111,6 +111,8 @@ public:
 	bool shoot = false;
 
 	int id;
+
+	float speed = 2.5f;
 };
 
 class LandPatrolHivemind : public BaseNPC//Controls a group of LandPatroler npcs to move together toward a target (The brains) also controls the draws, updates etc of its minions (only BaseNPC for chunks)

@@ -388,7 +388,6 @@ void LandPatroler::Update()
 			finalDir = dir; // fallback
 
 		// 4. Move
-		const float speed = 2.5f;
 		position.x += finalDir.x * speed;
 		position.y += finalDir.y * speed;
 
@@ -842,6 +841,7 @@ void LandPatrolHivemind::LANDPATROL_ReachedTarget(LandPatroler* minion)
 		break;
 	case ChaseStage::FLANKING:
 		//assign point that is even further ahead TODO
+		minion->speed = 2.0f;
 		for (TaskSlot& slot : taskboard)
 		{
 			if (slot.assigned == minion)
